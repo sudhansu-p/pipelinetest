@@ -1,0 +1,16 @@
+node {
+
+stage('git clone'){
+git credentialsId: 'f32f7564-c48a-445f-a50f-5e212eb7269e', url: 'https://github.com/sudhansu-p/HelloWorld.git''
+echo "clone done"
+}
+
+stage('build'){
+echo "build done"
+}
+
+stage (result published){
+
+echo "deployed"
+}
+}
